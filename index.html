@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Document</title>
+  </head>
+  <body>
+  <div class="headsec">
+    <div class="headsec-top"><p>Fiziki | Biznes</p></div>
+    <div class="headsec-bottom">
+      <nav>       
+          <a href="#">Ana səhifə</a>
+          <a href="#">Haqqımızda</a>
+          <a href="#">Xidmətlər</a>
+          <a href="#">Tariflər</a>
+          <a href="#">Əlaqə</a>        
+      </nav>
+      <div class="headsec-select">
+        Faktura ve paket
+        <select name="" id="">
+          <option value="">A</option>
+          <option value="">B</option>
+          <option value="">C</option>
+        </select>
+      </div>
+      <hr id="line"/>
+      <div class="headsec-icons">
+        <a href="http://"><img src="img/Search.jpg" alt="" srcset=""></a>
+        <a href="http://"><img src="img/Shopping.jpg" alt="" srcset=""></a>
+        <a href="http://"><i class="fa fa-bell" style="font-size:24px"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+      <div class="flag">
+        <marquee behavior="" direction="">Search city and see location!</marquee>
+      </div>
+
+      <div class="main-content">
+        <nav class="main-nav">
+          <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Kateqoriyalar</a>
+            <a href="#">Müştərilər</a>
+            <a href="#">Qrafiklər</a>
+            <a href="#">Hesabat</a>
+          </div>
+          
+          <div id="main">
+            <button title="Menu" class="openbtn" onclick="openNav()">☰</button>  
+            
+          </div>
+        </nav>
+
+        <article class="main-mid">
+          
+          <section class="top-banner">
+              <div class="container">
+                <h1 class="heading">FIND CITY</h1>
+                <form>
+                  <input id="cityName" type="text" value="" placeholder="Search for a city" autofocus>
+                  <button id="buttonsubmit" type="submit">SUBMIT</button>
+                  
+                </form>
+              </div>
+          </section>
+
+          <section class="ajax-section">
+            <div class="container">
+              <ul id="list" class="cities"></ul>
+            </div>
+          </section> 
+          
+        </article>
+
+        <aside>
+          <img src="https://tpc.googlesyndication.com/simgad/13819017744080435628" alt="" srcset="">
+        </aside>
+
+      </div>
+
+  </main>
+  
+    
+  <footer class="dark-footer skin-dark-footer" style="background-color: white;">
+    
+    <div style="background-color: skyblue; color: black;" class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="">
+            <ul id="social" class="footer-bottom-social" style="background-color: transparent;">
+              <li><a href="#"><i class="fa fa-instagram" style="font-size:48px;color:darkcyan"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square" style="font-size:48px;color:darkcyan"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus" style="font-size:48px;color:darkcyan"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <p class="mb-0">© 2022 https://itengineer.com/. Bütün hüquqlar qorunur</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    </footer>
+    
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

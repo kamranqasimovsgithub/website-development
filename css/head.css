@@ -1,0 +1,58 @@
+.headsec{
+    width: 100%;
+    height: 80px;
+    background-color: #2855ac;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.headsec .headsec-top{
+    height: 20px;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+}
+
+.headsec-bottom{
+    color: aliceblue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+.headsec-bottom nav {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: beige;
+}
+
+.headsec-bottom nav a{
+    margin-right: 30px;
+    color: beige;
+}
+
+.headsec-select{
+    margin-left: auto
+}
+
+.headsec-icons{
+    margin-left: -10px;
+    margin-right: 81px;
+    display: flex;
+    align-items: center;
+}
+
+.headsec-icons a{
+    margin: 0 10px;
+}
+
+#line{
+    width: 20px;
+    transform: rotate(90deg);
+    margin: 0 23px;
+}

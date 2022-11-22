@@ -1,0 +1,14 @@
+.footer-bottom-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer-bottom-social li{
+    margin: 10px;    
+}
+.footer-bottom-social li a i:hover{
+    margin-top: -5px;    
+    transition: 0.3s;
+}
