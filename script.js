@@ -58,7 +58,8 @@ form.addEventListener("submit", e => {
         </div> 
         `;
         li.innerHTML = markup;
-        document.getElementsByClassName('cities')[0].prepend(li);  
+        document.getElementsByClassName('cities')[0].prepend(li); 
+        document.getElementsByTagName('aside')[0].style.height = "auto";
         document.getElementById('cityName').value="";        
     })
     .catch((err) => {
@@ -96,5 +97,87 @@ function changeHeart(){
     
     element.insertBefore(node, element.firstChild);
 }
+
+function func(){
+    if(document.getElementsByTagName('main')[0].offsetHeight >= 312 && document.getElementsByTagName('main')[0].offsetHeight <= 550){
+        document.getElementsByTagName('aside')[0].style.height = "300px";
+        alert("yes")
+    }
+    console.log("big",document.getElementsByTagName('main')[0].offsetHeight)    
+}
+
+document.getElementById("demo").addEventListener("mouseover", tst);
+document.getElementById("demo").addEventListener("mouseout", tst1);
+
+function tst(){
+    document.getElementsByClassName('chat-shift')[0].style.display='none'; 
+    document.getElementsByClassName('contact-form')[0].style.display='none'; 
+    document.getElementsByClassName('chat-div')[0].style.width='200px';
+    setTimeout(showChat, 900);
+    function showChat(){
+        if(document.getElementsByClassName('chat-div')[0].offsetWidth == '200')
+            document.getElementsByClassName('chat-shift')[0].style.display='';  
+    }
+}
+
+console.log("En", document.getElementsByClassName('chat-div')[0].offsetWidth)
+
+function tst1(){
+    document.getElementsByClassName('chat-div')[0].style.width='50px';
+    
+    document.getElementsByClassName('chat-shift')[0].style.display='none';        
+}
+
+function showForm(){
+    document.getElementsByClassName('contact-form')[0].style.display='';     
+}
+let bStyle = 'solid'
+let b = 1000
+setInterval(function(){
+    //alert('alma')
+    if(bStyle=='solid'){
+        document.getElementsByClassName('contact-form')[0].style.transition = "all 0.6s ease-out";
+        document.getElementsByClassName('contact-form')[0].style.borderStyle=bStyle;
+        setTimeout(function(){
+            bStyle=''
+        }, 1000)
+    }
+    if(bStyle==''){
+        document.getElementsByClassName('contact-form')[0].style.transition = "all 0.6s ease-out";
+        document.getElementsByClassName('contact-form')[0].style.borderStyle='';
+
+        setTimeout(function(){
+            bStyle='solid'
+        }, 100)
+    }
+    
+},b)
+
+
+function showMessage(){
+    alert('isledi')
+    document.getElementById('search-area').style.display = 'none';
+    document.getElementById('search-area-ajax').style.display = 'none';
+    document.getElementById('mesaj-qutusu').style.display = 'block';
+}
+
+function formSubmit(){
+    event.preventDefault()
+    alert('test')
+    let ad = document.getElementById('ad').value
+    let nomre = document.getElementById('nomre').value
+    text1 = `<div class='message-cards' style="border: 1px solid gray;"><h1>${ad}</h1>`
+    text2 = `<p>${nomre}</p></div>`
+    document.getElementById('mesaj-qutusu').innerHTML += (text1 +'<hr>'+ text2);
+}
+
+function showCitySearch(x){
+    x.parentNode.style.display='none';
+    document.getElementById('search-area').style.display = '';    
+}
+
+
+
+
 
 /*Sidebar js end*/

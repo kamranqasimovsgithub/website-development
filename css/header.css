@@ -1,4 +1,9 @@
-.headsec{
+header{
+    height: 600px;
+}
+
+
+.topbar{
     width: 100%;
     height: 80px;
     background-color: #2855ac;
@@ -7,15 +12,15 @@
     padding: 15px;
 }
 
-.headsec .headsec-top{
+.topbar .headsec-top{
     height: 20px;
     display: flex;
-    color: aliceblue;
+    color: white;
     align-items: center;
 }
 
 .headsec-bottom{
-    color: aliceblue;
+    color: white;
     height: 60px;
     display: flex;
     align-items: center;
@@ -33,7 +38,7 @@
 
 .headsec-bottom nav a{
     margin-right: 30px;
-    color: beige;
+    color: white;
 }
 
 .headsec-select{
